@@ -1,5 +1,5 @@
 <template>
-<fa icon="twitter" type="fab" class="classname"></fa>
+<fa icon="user-secret" type="fab" class="classname"></fa>
 </template>
 
 <script>
