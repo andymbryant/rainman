@@ -1,4 +1,6 @@
 import { createApp } from 'vue';
+import '@tensorflow/tfjs';
+import '@tensorflow/tfjs-core';
 import App from './App.vue';
 import router from './router';
 
