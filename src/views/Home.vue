@@ -1,18 +1,44 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div id="top">
+  <div class='half' id="controls"></div>
+  <div class="half" id='webcam'></div>
+</div>
+<div id="cards">
+  <Row v-for='suit in suits' :suit='suit' :key='suit'/>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Row from '@/components/Row.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    Row,
+  },
+  data() {
+    return {
+      suits: ['Hearts', 'Diamonds', 'Spades', 'Clubs'],
+    };
   },
 };
 </script>
+
+<style>
+
+#top {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+#cards {
+  max-width: 800px;
+}
+.half {
+  width: 375px;
+  border: 1px solid black;
+}
+
+#controls {
+}
+</style>
