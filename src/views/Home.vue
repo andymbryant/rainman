@@ -25,6 +25,7 @@
 /* eslint-disable no-return-assign */
 import Row from '@/components/Row.vue';
 import WebCam from '@/components/WebCam.vue';
+import * as tf from '@tensorflow/tfjs';
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
 
 export default {
@@ -42,6 +43,7 @@ export default {
   },
   methods: {
     async getModel() {
+      tf.setBackend('cpu');
       return cocoSsd.load().then((model) => model);
     },
   },

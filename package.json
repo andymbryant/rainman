@@ -12,9 +12,11 @@
     "@tensorflow/tfjs": "^2.7.0",
     "@tensorflow/tfjs-converter": "^2.7.0",
     "@tensorflow/tfjs-core": "^2.7.0",
+    "@tensorflow/tfjs-node": "^2.7.0",
+    "@tensorflow/tfjs-node-gpu": "^2.7.0",
     "core-js": "^3.6.5",
     "normalize.css": "^8.0.1",
-    "seedrandom": "^3.0.5",
+    "seedrandom": "~2.4.3",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },

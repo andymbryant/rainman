@@ -27,7 +27,7 @@ export default {
     async bindVideo() {
       setTimeout(() => {
         this.video = this.$refs.webcam;
-        this.$refs.webcam.addEventListener('loadeddata', this.predict);
+        this.video.addEventListener('loadeddata', this.predict);
       }, 100);
     },
     async enableWebCam(event) {
@@ -39,6 +39,7 @@ export default {
         .catch((err) => console.error(err));
     },
     predict() {
+      console.log(this.model);
       this.model.detect(this.video).then((preds) => {
         console.log(preds);
         // Remove any highlighting we did previous frame.
@@ -84,7 +85,6 @@ export default {
   mounted() {
     this.bindVideo()
       .then(() => this.loading = false);
-    // this.enableWebcam().then(() => this.predict());
   },
 };
 </script>
