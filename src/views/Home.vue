@@ -32,7 +32,7 @@ export default {
   justify-content: space-between;
 }
 #cards {
-  max-width: 800px;
+  width: 800px;
 }
 .half {
   width: 375px;

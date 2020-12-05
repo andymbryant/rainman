@@ -16,9 +16,9 @@ export default {
 
 <style scoped>
   .card-ctr {
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid black;
-    height: 100%;
+    height: 60px;
     width: 100%;
   }
 </style>

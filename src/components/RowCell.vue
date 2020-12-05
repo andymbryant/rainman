@@ -1,5 +1,5 @@
 <template>
-<fa icon="user-secret" type="fab" class="classname"></fa>
+  <div class='row-cell-ctr'>{{suitLetter}}</div>
 </template>
 
 <script>
@@ -11,9 +11,18 @@ export default {
       required: true,
     },
   },
+  computed: {
+    suitLetter() {
+      return this.suit.charAt(0).toUpperCase();
+    },
+  },
 };
 </script>
 
 <style scoped>
-
+  .row-cell-ctr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 </style>

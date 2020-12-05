@@ -35,8 +35,9 @@ export default {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 </style>
